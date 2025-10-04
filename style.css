@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body styling start from here */
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121826;
+  background-image: url(./resources/Background_image@3x.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fceed8;
+  letter-spacing: 0.5px;
+}
+
+.feature__body {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feture__hading {
+  text-align: center;
+}
+
+.feture__hading h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.feture__hading h2 {
+  font-size: 16px;
+  color: #9da3ae;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* feature card styling from here */
+
+.feature__card {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: auto;
+  column-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #212936;
+  padding: 20px;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.card__icon span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #fceed8;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.card__icon span:nth-child(2) {
+  background-color: #dee9fc;
+}
+
+.card__icon span:nth-child(3) {
+  background-color: #fbe5e6;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fceed8;
+  margin-bottom: 25px;
+}
+
+.card p {
+  color: #d2d5da;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.card__image {
+  border-radius: 20px;
+}
+.card__image img {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/* all hover effect styling here */
+
+.card:hover {
+  outline: 1px solid #9da3ae;
+
+  cursor: pointer;
+}

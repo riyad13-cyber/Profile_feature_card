@@ -1,0 +1,24 @@
+@media (max-width: 412px) {
+  .feture__hading h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .feture__hading h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .feature__card {
+    grid-template-columns: repeat(1, 300px);
+    grid-auto-rows: auto;
+    row-gap: 20px;
+  }
+
+  .card__icon span {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}
